@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Quem Somos | MSW Capital</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+  <!-- header com logo no topo-->
+  <section id="header">
+      <div class="titulo-pagina">
+        <!-- PEGAR A LOGO
+         <img src="msw-capital-allcaps-blue.png" alt="MSW Capital" class="logo"> -->
+        <h1>MSW</h1>
+      </div>
+  <!-- menu lateral -->
+  <nav id="sideNav">
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="quem_somos.html">Quem Somos</a></li>
+      <li><a href="filosofia.html">Filosofia</a></li>
+      <li><a href="equipe.html">Equipe</a></li>
+      <li><a href="fundos.html">Fundos</a></li>
+      <li><a href="noticias.html">Corporate Venture</a></li>
+      <li><a href="servicos.html">Portfólio</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+  <!-- adicionando menu button e sua funcionalidade -->
+  <i class="bi bi-list" id="menuBtn"></i>
+
+  <script>
+    var menuBtn = document.getElementById('menuBtn');
+    var sideNav = document.getElementById('sideNav');
+
+    sideNav.style.right = '-250px';
+    menuBtn.onclick = function(){
+      if(sideNav.style.right == '-250px'){
+        sideNav.style.right = '0';
+        menuBtn.classList.add('active');
+      }
+      else{
+        sideNav.style.right = '-250px';
+        menuBtn.classList.remove('active');
+      }
+    }
+  </script>
+  </section>
+
+  <!-- conteúdo da página antes da timeline-->
+    <div class="frase_churchill">
+      <h2>O sucesso não é definitivo e o fracasso não é fatal:</h2>
+      <h2 class="h2-lateral">o que importa é a coragem para seguir em frente.</h2>
+    </div>
+
+  <!-- titulo da timeline - devo tirar daqui -->
+  <!--TIMELINE - história -->
+  <div class="timeline">
+    <!-- tambem eh filo de timeline -->
+    <h1 class="titulo-timeline">Nossa história</h1> 
+    
+    <div class="container-timeline left">
+      <div class="textbox">
+        <h2>Title</h2>
+        <small>2000</small>
+        <p>Início da Trajetória da MSW como Educação e Consultoria</p>
+      </div>
+    </div>
+
+    <div class="container-timeline right">
+      <div class="textbox">
+        <h2>Title</h2>
+        <small>2008</small>
+        <p>M&A e Desenvolvimento de Negócios</p>
+      </div>
+    </div>
+
+    <div class="container-timeline left">
+      <div class="textbox">
+        <h2>Title</h2>
+        <small>2012</small>
+        <p>Estabelecimento da MSW como Gestora de Recursos</p>
+      </div>
+    </div>
+
+    <div class="container-timeline right">
+      <div class="textbox">
+        <h2>Title</h2>
+        <small>2015</small>
+        <p>Posicionamento pioneiro na gestão de fundo multi-corporativo no Venture Capital</p>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+</body>
+
+</html>
