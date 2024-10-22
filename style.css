@@ -2,7 +2,6 @@
     margin:0;
     padding:0;
     font-family: Poppins, sans-serif;
-    background-color: #F9F9F9;
 }
 
 #header{ 
@@ -15,12 +14,12 @@
     align-items: center; /*alinhar verticalmente*/
     justify-content: space-between; /*espaçamento horizontal entre os elementos*/
     padding: 10px 20px;
+    background-color: #F9F9F9;
 }
 
+.containerLogo{
+    padding-left: 5vh;
 
-.container{
-    margin-right: 100px;
-    margin-left: 100px;
 }
 
 .menuLateral{
@@ -30,7 +29,7 @@
 
 #sideNav{
     width: 250px;
-    height: 100hv;
+    height: 100vh;
     position: fixed;
     right: -250px;
     top: 0;
@@ -174,6 +173,107 @@ nav ul li a{
     margin-right: 100px;
     margin-bottom: 40px;
 }
+
+
+.corpo1{
+    background-image: url(https://s3-alpha-sig.figma.com/img/3661/8159/3b996f6236b1fc4b4d28e4b627cee217?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KYuv4I8YCZxcB2bOC~NM0RRiIMgaJfXlK-obbCpxXK1oeSS4snQ9puWrmQtYcSaZdRht8QQRm5H~vjl3ohbSyHqtGe6KSMyllTjkbVI4dc0eiYay8TReNiavYonaAa6uf1J54zUh4qDJsEWMg4nON5NKdTbK-0C6su74GHw30908t~IwXxr2Ih4IAD108Sk3xBdEj8Bpa0fqQGswEz9Vpq84u6dSmhCIHM18o7VrxlmC~gitAECLKDgnO0M2Yrlu1PK95mOvL93G-d~2cEbRGoKRvP90yXD2DiZBTZmNHMtDAhwvG4FthIAWVyVSzPkuOql-bt8t1Qv61IEaaSDi9A__);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 130vh; 
+    width: 100%;
+    padding-left: 10vh;
+}
+
+.tituloPrincipal{
+    color: black;
+    font-size: 50px;
+    padding-top: 25vh;
+    font-weight: 400;
+}
+
+.subTitulo{
+
+    color: rgb(38, 37, 37);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+.linkPortfolio{
+    color: #C83838;
+    font-size: 35px;
+}
+
+
+.textboxPrincipal{
+    background-color: white;
+    border-radius: 6px; /*borda arredondada*/
+    margin-top: 50px;
+    width: 600px;
+    height: 180px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px; /*tamanho da caixa*/
+    text-align: justify; /* espaçamento das letras*/
+
+}
+
+.saibaMais{
+    color: #C83838;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+
+.containerAzul{
+    background-color: #161E2D;
+    width: 100%;
+    color:white;
+    height: 50vh;
+    padding-top: 150px;
+    display: inline-block;
+
+}
+
+.tituloAzul{
+    font-weight: 400;
+    padding-left: 15vh;
+    font-size: 50px;
+
+}
+
+.textboxAzul{
+    background-color: #161E2D;
+    border-radius: 6px; /*borda arredondada*/
+    width: 600px;
+    padding-left: 100vh;
+    padding-right: 30px; /*tamanho da caixa*/
+    text-align: justify; /* espaçamento das letras*/
+}
+
+.essenciaParagrafo{
+    font-size: 20px;
+}
+
+.maisSobre{
+    color: #C83838;
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+
+.linhaVermelha{
+    background-color: #C83838;
+    width: 35%;
+    height: 3px;
+    margin-top: 10px;
+
+}
+
+
 
 
 
