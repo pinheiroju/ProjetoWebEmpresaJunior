@@ -212,7 +212,7 @@ nav ul li a{
     padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px; /*tamanho da caixa*/
-    text-align: justify; /* espaçamento das letras*/
+    text-align: left; /* espaçamento das letras*/
 
 }
 
