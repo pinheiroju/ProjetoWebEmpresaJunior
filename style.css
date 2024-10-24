@@ -514,22 +514,25 @@ nav ul li a{
     background-position: center;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column ;
     margin-top: 200px;
 }
 
 .textboxConvite{
-    position: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
     width: 800px;
     height: 250px;
     background-color: #F9F9F9;
-    align-items: center;
     margin-top: 90vh;
     border-radius: 5px;
-    margin-left: 45vh;
+
 }
 
 .tituloConvite{
-    padding-top: 40px;
     font-size: 40px;
     font-weight: 500;
     text-align: center;
@@ -539,8 +542,6 @@ nav ul li a{
 
 .paragrafoConvite{
     padding-top: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
     font-size: 20px;
     font-weight: 300;
     text-align: center;
@@ -548,6 +549,10 @@ nav ul li a{
 }
 
 .textboxComecarAgora{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
     position: absolute;
     width: 300px;
     height: 70px;
@@ -562,7 +567,12 @@ nav ul li a{
     font-size: 30px;
     font-weight: 500;
     text-align: center;
-    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+
 }
 
 .textoMeuDeck{
