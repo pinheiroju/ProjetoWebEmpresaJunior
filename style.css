@@ -199,6 +199,11 @@ nav ul li a{
     box-sizing: border-box;
 }
 
+.tituloCorpo1{
+    font-weight: 400;
+
+}
+
 .tituloPrincipal{
     color: black;
     font-size: 50px;
@@ -308,14 +313,14 @@ nav ul li a{
 
 .containerBranco{
     background-color: white;
-    background-size: 25%;
-    height: 50vw;
+    height: 700px;
     width: 35%;
     margin-left: 55vw;
     position: absolute;
     top:-100px;
     overflow-x: hidden;
     box-sizing: border-box;
+    border-radius: 6px;
 }
 
 .tituloBranco{
@@ -323,7 +328,7 @@ nav ul li a{
     font-size: 40px;
     text-align: center;
     padding-top: 50px;
-    font-weight: 400;
+    font-weight: 300;
     margin-bottom: 20px;
 
 }
