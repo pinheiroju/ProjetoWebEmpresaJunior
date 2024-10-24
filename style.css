@@ -577,26 +577,47 @@ nav ul li a{
     background-color: #161E2D;
     height: 80vh;
     margin-top: 35vh;
-
-}
-
-.bandeiras2{
-    margin-left: 90vh;
+    width: 100%;
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    flex-direction: column; /* Alinha os itens verticalmente */
 
 }
 
 .logoFinal{
     height: 50px;
     margin-top: 10vh;
-    margin-left: 75vh;
+
 }
 
+.bandeiras2{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.bandeiraBR, .bandeiraUS{
+    margin-left: 10px;
+}
+
+
+.containerGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin-top: 20vh;
+
+}
 .containersInfos{
-    margin-left: 1.5vh;
     background-color: #242f42;
-    width: 600px;
+    width: 500px;
     height: 150px;
     border-radius: 5px;
+    text-align: center;
+    
 }
 
 .tituloInfos{
