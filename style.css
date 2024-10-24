@@ -619,6 +619,7 @@ nav ul li a{
     overflow-x: hidden;
     box-sizing: border-box;
     margin-top: 20vh;
+    width: 100%;
 
 }
 .containersInfos{
@@ -627,6 +628,8 @@ nav ul li a{
     height: 150px;
     border-radius: 5px;
     text-align: center;
+    overflow-x: hidden;
+    box-sizing: border-box;
     
 }
 
