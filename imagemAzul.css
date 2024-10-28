@@ -1,0 +1,14 @@
+.imgAzul1{
+    height: 400px;
+    width: 300px;
+    margin-left: 120vh;
+    display: flex;
+    background-image: url(https://assets-global.website-files.com/5ef214b512d072975632f939/5f1e2963b5a61971088d60fd_20191031_113943.jpg);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+    background-blend-mode:multiply ;
+    background-position: center;
+    transform: skewX(4deg);
+    z-index: 1;
+}
