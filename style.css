@@ -82,8 +82,12 @@ nav ul li a{
 
 .timeline{
   position: relative;
-  max-width: 1200px;
-  margin: 100px auto;
+  max-width: 100%;
+  margin-left: 100px;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .container-timeline{
@@ -94,6 +98,7 @@ nav ul li a{
   border-radius: 7px;
   animation: movedown 3s linear forwards;
   opacity: 0;
+  
 }
 /* animacao dos containers em geral */
 @keyframes movedown{
@@ -174,8 +179,11 @@ nav ul li a{
 
 
 .titulo-timeline{
+  margin-top: 20px;
   margin-bottom: 40px;
   font-weight: 300;
+  font-size: 50px;
+  text-align: center;
 }
 
 .h2-lateral{
@@ -663,35 +671,24 @@ to {
   font-weight: 300;
   font-size: 20px;
   text-align: left;
-  margin-top: 110px;
   padding-left: 50px;
-  padding-top: 50px;
+  padding-top: 150px;
   background-color: #161E2D;
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
 }
 
-.quemSomos2{
+.tituloQuemSomos{
   font-weight: 300;
   font-size:40px;
 }
 
-.quemSomosTexto{
+.textoQuemSomos{
   width: 50%;
   text-align: justify;
   font-weight: 300;
   font-size:25px;
 }
 
-.oQueFazemos{
-  font-weight: 300;
-  font-size:40px;
-}
 
-.oQueFazemos2{
-  width: 50%;
-  text-align: justify;
-  font-weight: 300;
-  font-size:25px;
-}
