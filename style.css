@@ -32,7 +32,7 @@
 .botaoContrate:hover{
   background-color: #101826;
   color: white;
-  
+
 }
 
 .containerLogo{
@@ -601,7 +601,6 @@ to {
   position: relative;
   max-width: 100%;
   margin-left: 100px;
-  margin-bottom: 40px;
   align-items: center;
   justify-content: center;
   background-color: #F9F9F9;
@@ -687,8 +686,9 @@ to {
 }
 
 .titulo-timeline{
-  margin-top: 20px;
-  margin-bottom: 40px;
+  background-color: #F9F9F9;
+  padding-top: 40px;
+  padding-bottom: 40px;
   font-weight: 300;
   font-size: 50px;
   text-align: center;
@@ -737,9 +737,18 @@ to {
   margin-top: 40px; 
   margin-left: 35vh; 
   width: 65%; 
-  background-color: #8a8a8a; 
+  background-color: #c2c2c2; 
   height: 2px; 
 }
+
+.containerGrandeNH{
+  width: 100%;
+  height: auto;
+  background-color: #F9F9F9;
+  padding-top: 10vh;
+  
+}
+
 
 .textoNossaHistoria {
   font-size: 20px;
@@ -756,8 +765,21 @@ to {
   width: 40%;
   margin-left: 15vh;
   margin-bottom: 15vh;
-  margin-top: 8vh;
+
   background-color: #161E2D;
   border-radius: 15px;
 }
 
+.linhaSeparadora{
+  width: 100%; 
+  background-color: #333333; 
+  height: 2px; 
+}
+
+.containerLinhaSeparadora{
+  background-color: #F9F9F9;
+}
+
+.containerNossaHistoria{
+  background-color: #F9F9F9;
+}
