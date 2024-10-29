@@ -578,7 +578,7 @@ to {
   padding-bottom: 50px;
   background-color: #161E2D;
   background-size: cover;
-  height: auto;
+  height: 60vh;
   width: 100%;
 }
 
@@ -600,18 +600,21 @@ to {
 .timeline{
   position: relative;
   max-width: 100%;
-  margin-left: 100px;
+  padding-left: 100px;
   align-items: center;
   justify-content: center;
-  background-color: #F9F9F9;
-
+  background-image: url(https://assets-global.website-files.com/5ef214b512d072975632f939/5f1e279c1bda1cee24096d68_foto-slide-2.jpg);
+  height: 75vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  mix-blend-mode: multiply;
+  background-blend-mode:multiply ;
 }
 
 .container-timeline{
   padding: 10px 20px;
   position: relative;
   width: 30%;
-  background: #4c5769;
+  background: #161E2D;
   border-radius: 7px;
   animation: movedown 3s linear forwards;
   opacity: 0;
@@ -649,6 +652,7 @@ to {
 
 .textbox{
   padding: 20px 30px;
+  height: 65px;
   background: white;
   position: relative;
   border-radius: 6px; /*borda arredondada*/
@@ -667,12 +671,13 @@ to {
   content: '';
   position: absolute;
   width: 6px;
-  height: 100%;
+  height: 50vh;
   background:#4c5769 ;
   top: 0;
   left: 47%;
-  margin-left: -3px;
+  margin-left: 30px;
   animation: moveline 6s linear forwards;
+  margin-top: 110px;
 }
 
 /* animacao da linha */
@@ -681,12 +686,12 @@ to {
       height: 0;
   }
   100%{
-      height: 100%;
+      height: 80%;
   }   
 }
 
 .titulo-timeline{
-  background-color: #F9F9F9;
+  color: white;
   padding-top: 40px;
   padding-bottom: 40px;
   font-weight: 300;
