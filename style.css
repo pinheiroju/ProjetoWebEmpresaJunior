@@ -87,6 +87,7 @@ nav ul li a{
   margin-bottom: 40px;
   align-items: center;
   justify-content: center;
+  background-color: #F9F9F9;
 
 }
 
@@ -671,17 +672,18 @@ to {
   font-weight: 300;
   font-size: 20px;
   text-align: left;
-  padding-left: 50px;
   padding-top: 150px;
+  padding-bottom: 50px;
   background-color: #161E2D;
   background-size: cover;
-  height: 90vh;
+  height: auto;
   width: 100%;
 }
 
 .tituloQuemSomos{
   font-weight: 300;
   font-size:40px;
+  padding-left: 50px;
 }
 
 .textoQuemSomos{
@@ -689,7 +691,11 @@ to {
   text-align: justify;
   font-weight: 300;
   font-size:25px;
+  padding-left: 50px;
 }
+
+
+
 
 .containerBrancoQuemSomos{
   display: flex;
