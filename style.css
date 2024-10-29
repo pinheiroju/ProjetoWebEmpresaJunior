@@ -4,6 +4,7 @@
   font-family: Poppins, sans-serif;
 }
 
+/* comum de todas as paginas */
 #header{ 
   height: 10vh; 
   top: 0;
@@ -17,20 +18,36 @@
   background-color: #F9F9F9;
 }
 
+.botaoContrate{
+  background-color: #C83838;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 15px;
+  text-decoration: none;
+  margin-left: 90vh;
+  margin-right: 0;
+}
+
+.botaoContrate:hover{
+  background-color: #101826;
+  color: white;
+  
+}
 
 .containerLogo{
   padding-left: 5vh;
-
 }
 
 .bandeiraBR, .bandeiraUS{
   width: 30px;
   height: 30px;
+  margin-left: 10px;
 
 }
 
 .bandeiras{
-  margin-left: 90vh;
+  margin-right: 15vh;
   margin-top: 10px;
 }
 
@@ -79,123 +96,8 @@ nav ul li a{
   color: white;
 }
 
-
-.timeline{
-  position: relative;
-  max-width: 100%;
-  margin-left: 100px;
-  margin-bottom: 40px;
-  align-items: center;
-  justify-content: center;
-  background-color: #F9F9F9;
-
-}
-
-.container-timeline{
-  padding: 10px 20px;
-  position: relative;
-  width: 30%;
-  background: #4c5769;
-  border-radius: 7px;
-  animation: movedown 3s linear forwards;
-  opacity: 0;
-
-}
-/* animacao dos containers em geral */
-@keyframes movedown{
-  0%{
-      transform: translateY(-30px);
-      opacity: 1;
-  }
-  100%{
-      transform: translateY(0);
-      opacity: 1;
-  }
-}
-
-/* animacao dos containers ( um por um ) */
-
-.container-timeline:nth-child(2){
-  animation-delay: 0.5s;
-}
-
-.container-timeline:nth-child(3){
-  animation-delay: 1.7s;
-}
-
-.container-timeline:nth-child(4){
-  animation-delay: 3s;
-}
-
-.container-timeline:nth-child(5){
-  animation-delay: 4s;
-}
-
-.textbox{
-  padding: 20px 30px;
-  background: white;
-  position: relative;
-  border-radius: 6px; /*borda arredondada*/
-  font-size: 15px;
-}
-
-.container-timeline.left{
-  left: 10%;
-}
-
-.container-timeline.right{
-  left: 50%;
-}
-
-.timeline::after{
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 100%;
-  background:#4c5769 ;
-  top: 0;
-  left: 47%;
-  margin-left: -3px;
-  animation: moveline 6s linear forwards;
-}
-
-/* animacao da linha */
-@keyframes moveline{
-  0%{
-      height: 0;
-  }
-  100%{
-      height: 100%;
-  }   
-}
-
-.textbox h2{
-  font-weight: 600;
-}
-
-.textbox small{
-  display: inline-block;
-  margin-bottom: 15px;
-}
-
-
-.titulo-timeline{
-  margin-top: 20px;
-  margin-bottom: 40px;
-  font-weight: 300;
-  font-size: 50px;
-  text-align: center;
-}
-
-.h2-lateral{
-  font-size: 30px;
-  font-weight: 1000;
-  text-align: right; /*fazer o alinhamento para dreita*/
-  width: 100%;
-  margin-right: 100px;
-  margin-bottom: 40px;
-}
-
+/* fim do comum para todas as paginas */
+/* css referente a pagina home */
 
 .corpo1{
   background-image: url(https://s3-alpha-sig.figma.com/img/3661/8159/3b996f6236b1fc4b4d28e4b627cee217?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KYuv4I8YCZxcB2bOC~NM0RRiIMgaJfXlK-obbCpxXK1oeSS4snQ9puWrmQtYcSaZdRht8QQRm5H~vjl3ohbSyHqtGe6KSMyllTjkbVI4dc0eiYay8TReNiavYonaAa6uf1J54zUh4qDJsEWMg4nON5NKdTbK-0C6su74GHw30908t~IwXxr2Ih4IAD108Sk3xBdEj8Bpa0fqQGswEz9Vpq84u6dSmhCIHM18o7VrxlmC~gitAECLKDgnO0M2Yrlu1PK95mOvL93G-d~2cEbRGoKRvP90yXD2DiZBTZmNHMtDAhwvG4FthIAWVyVSzPkuOql-bt8t1Qv61IEaaSDi9A__);
@@ -374,6 +276,7 @@ nav ul li a{
   font-weight: 400;
 }
 
+/* css referente a barra movel de logos */
 .item{
   width: 200px;
   height: 100px;
@@ -491,6 +394,7 @@ to {
   background-size: contain;
   animation-delay: calc(30s / 9 * (9 - 9) * -1);
 }
+/* fim do css referente a barra movel de logos */
 
 .containerLinhaVermelha {
   display: flex;
@@ -622,10 +526,6 @@ to {
 
 }
 
-.bandeiraBR, .bandeiraUS{
-  margin-left: 10px;
-}
-
 
 .containerGrid{
   display: grid;
@@ -666,6 +566,8 @@ to {
   justify-content: center;
 }
 
+/* fim do css referente a pagina home */
+/* css referente a pagina quem somos */ 
 
 .quemSomos{
   color: white;
@@ -694,8 +596,104 @@ to {
   padding-left: 50px;
 }
 
+/* css referente a timeline */
+.timeline{
+  position: relative;
+  max-width: 100%;
+  margin-left: 100px;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9F9F9;
 
+}
 
+.container-timeline{
+  padding: 10px 20px;
+  position: relative;
+  width: 30%;
+  background: #4c5769;
+  border-radius: 7px;
+  animation: movedown 3s linear forwards;
+  opacity: 0;
+
+}
+/* animacao dos containers em geral */
+@keyframes movedown{
+  0%{
+      transform: translateY(-30px);
+      opacity: 1;
+  }
+  100%{
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* animacao dos containers ( um por um ) */
+
+.container-timeline:nth-child(2){
+  animation-delay: 0.5s;
+}
+
+.container-timeline:nth-child(3){
+  animation-delay: 1.7s;
+}
+
+.container-timeline:nth-child(4){
+  animation-delay: 3s;
+}
+
+.container-timeline:nth-child(5){
+  animation-delay: 4s;
+}
+
+.textbox{
+  padding: 20px 30px;
+  background: white;
+  position: relative;
+  border-radius: 6px; /*borda arredondada*/
+  font-size: 15px;
+}
+
+.container-timeline.left{
+  left: 10%;
+}
+
+.container-timeline.right{
+  left: 50%;
+}
+
+.timeline::after{
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background:#4c5769 ;
+  top: 0;
+  left: 47%;
+  margin-left: -3px;
+  animation: moveline 6s linear forwards;
+}
+
+/* animacao da linha */
+@keyframes moveline{
+  0%{
+      height: 0;
+  }
+  100%{
+      height: 100%;
+  }   
+}
+
+.titulo-timeline{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-size: 50px;
+  text-align: center;
+}
+/* fim do css referente a timeline */
 
 .containerBrancoQuemSomos{
   display: flex;
