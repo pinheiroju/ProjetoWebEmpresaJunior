@@ -743,10 +743,21 @@ to {
 
 .textoNossaHistoria {
   font-size: 20px;
-  width: 50%;
-  padding-top: 7vh;
-  padding-left: 35vh;
-  padding-right: 35vh;
-  margin: 0 auto; 
-  text-align: center; 
+  font-weight: 200;
+  width: 80%;
+  padding-top: 7vh; 
+  padding-bottom: 7vh; 
+  padding-left: 8vh;
+  text-align: justify; 
+  color: white;
 }
+
+.containerTextoNH{
+  width: 40%;
+  margin-left: 15vh;
+  margin-bottom: 15vh;
+  margin-top: 8vh;
+  background-color: #161E2D;
+  border-radius: 15px;
+}
+
