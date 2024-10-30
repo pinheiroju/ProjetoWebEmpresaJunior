@@ -32,7 +32,7 @@
 .botaoContrate:hover{
   background-color: #101826;
   color: white;
-
+  
 }
 
 .containerLogo{
@@ -578,7 +578,7 @@ to {
   padding-bottom: 50px;
   background-color: #161E2D;
   background-size: cover;
-  height: 60vh;
+  height: auto;
   width: 100%;
 }
 
@@ -597,107 +597,203 @@ to {
 }
 
 /* css referente a timeline */
-.timeline{
-  position: relative;
+
+@keyframes scroll-infinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Ajuste conforme necessário */
+  }
+}
+
+.timeline-wrapper{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   max-width: 100%;
-  padding-left: 100px;
-  align-items: center;
-  justify-content: center;
+  height: 80vh;
   background-image: url(https://assets-global.website-files.com/5ef214b512d072975632f939/5f1e279c1bda1cee24096d68_foto-slide-2.jpg);
-  height: 75vh;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(16, 24, 38,0.7);
   mix-blend-mode: multiply;
-  background-blend-mode:multiply ;
-}
-
-.container-timeline{
-  padding: 10px 20px;
+  background-blend-mode:multiply;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  width: 30%;
-  background: #161E2D;
-  border-radius: 7px;
-  animation: movedown 3s linear forwards;
-  opacity: 0;
-
-}
-/* animacao dos containers em geral */
-@keyframes movedown{
-  0%{
-      transform: translateY(-30px);
-      opacity: 1;
-  }
-  100%{
-      transform: translateY(0);
-      opacity: 1;
-  }
+  overflow-x: auto;
 }
 
-/* animacao dos containers ( um por um ) */
-
-.container-timeline:nth-child(2){
-  animation-delay: 0.5s;
+.timeline-wrapper::-webkit-scrollbar{
+  display: none;
 }
 
-.container-timeline:nth-child(3){
-  animation-delay: 1.7s;
-}
 
-.container-timeline:nth-child(4){
-  animation-delay: 3s;
-}
-
-.container-timeline:nth-child(5){
-  animation-delay: 4s;
-}
-
-.textbox{
-  padding: 20px 30px;
-  height: 65px;
-  background: white;
-  position: relative;
-  border-radius: 6px; /*borda arredondada*/
-  font-size: 15px;
-}
-
-.container-timeline.left{
-  left: 10%;
-}
-
-.container-timeline.right{
-  left: 50%;
-}
-
-.timeline::after{
-  content: '';
+.timeline{
+  height: 5px;
+  padding: 0 4rem;
+  background-color: white;
+  list-style-type: none;
+  --scale: 1;
+  display: flex;
   position: absolute;
-  width: 6px;
-  height: 50vh;
-  background:#4c5769 ;
-  top: 0;
-  left: 47%;
-  margin-left: 30px;
-  animation: moveline 6s linear forwards;
-  margin-top: 110px;
+  animation: scroll-infinite 20s linear infinite;
+  width: 200%;
+
 }
 
-/* animacao da linha */
-@keyframes moveline{
-  0%{
-      height: 0;
-  }
-  100%{
-      height: 80%;
-  }   
+.timeline li{
+  position: relative;
+  width: 22rem;
+  width: calc(100%/6);
+  
 }
 
-.titulo-timeline{
+.timeline li::before, .timeline li::after, .timeline-content, .timeline-title-even, .timeline-title-odd{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(var(--scale));
+  transition: .5s ease;
+}
+
+/* nao estava centralizado com a bolinha 
+  fazendo isso para ajeitar */
+.timeline li::after{
+  left: 48% !important; 
+}
+
+
+.timeline li::before{
+  top: 1rem;
+  content: "";
+  display: inline-block;
+  width: 0.2rem;
+  height: 1.5rem;
+  background-color: white;
+
+}
+
+/*linhazinha muda de cor quando passa mouse*/
+.timeline li:hover::before{
+  background-color: white; 
+
+}
+
+.timeline li:nth-child(even)::before{
+  top: -1rem;
+}
+
+/* ano embaixo da bola */ 
+.timeline li::after{
+  content: attr(timeline-content-date);
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  top:-3.4rem;
   color: white;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-weight: 300;
-  font-size: 50px;
-  text-align: center;
 }
+
+
+.timeline li:nth-child(odd)::after{
+  top: 3rem;
+  
+}
+
+.timeline li:nth-child(even)::after{
+  top: -3rem;
+}
+
+
+.timeline-content{
+  width: 1.3rem;
+  height: 1.3rem;
+  color: white;
+  background-color: white;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: .3s ease;
+}
+
+.timeline-content-date{
+  margin-left: -1.5rem;
+}
+
+.timeline li:hover .timeline-content{
+  background-color: white;
+  --scale: 1.2;
+  cursor: pointer;
+  z-index: 200;
+}
+
+/* marco */ 
+.timeline-title-odd, .timeline-title-even{ 
+  font: 600 1.1rem;
+  white-space: pre;
+  opacity: 0;
+  color: white;
+}
+
+
+.timeline-title-odd{
+  top: -2.4rem;
+}
+
+.timeline-title-even{
+  top: 2.4rem;
+}
+
+.timeline li:hover .timeline-title-even, .timeline li:hover .timeline-title-odd{
+  opacity: 1;
+}
+
+
+.timeline-content.show{
+  width: 22rem;
+  height: 22rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: white;
+  z-index: 100;
+  box-shadow: 0 .1rem .4rem #0004;
+}
+
+.timeline-content h2{
+  text-transform: capitalize;
+  color: black;
+}
+
+.timeline-content h3{
+  color: black;
+}
+
+
+.timeline-content p{
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-left: 0.7rem;
+
+}
+
+.timeline-content.show p{
+  margin-left: 0.7rem;
+}
+
+.timeline-content-close{
+  background-color: #242f42;
+  align-self: flex;
+  padding: .5rem .8rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+}
+
+
 /* fim do css referente a timeline */
 
 .containerBrancoQuemSomos{
@@ -706,6 +802,8 @@ to {
   height: 33vh;
   flex-direction: column;
   background-color: #F9F9F9;
+  padding-bottom: 30px;
+
 }
 
 .containerLemaFrase{
@@ -742,35 +840,28 @@ to {
   margin-top: 40px; 
   margin-left: 35vh; 
   width: 65%; 
-  background-color: #c2c2c2; 
+  background-color: #8a8a8a; 
   height: 2px; 
 }
 
-.containerGrandeNH{
-  width: 100%;
-  height: auto;
-  background-color: #F9F9F9;
-  padding-top: 10vh;
-  
-}
-
-
 .textoNossaHistoria {
   font-size: 20px;
-  font-weight: 200;
-  width: 80%;
-  padding-top: 7vh; 
-  padding-bottom: 7vh; 
-  padding-left: 8vh;
-  text-align: justify; 
-  color: white;
+  width: 50%;
+  padding-top: 7vh;
+  padding-left: 35vh;
+  padding-right: 35vh;
+  margin: 0 auto; 
+  text-align: center; 
 }
+
+
+
 
 .containerTextoNH{
   width: 40%;
   margin-left: 15vh;
   margin-bottom: 15vh;
-
+  color:white;
   background-color: #161E2D;
   border-radius: 15px;
 }
@@ -787,4 +878,15 @@ to {
 
 .containerNossaHistoria{
   background-color: #F9F9F9;
+}
+
+.textoNossaHistoria {
+  font-size: 20px;
+  font-weight: 200;
+  width: 80%;
+  padding-top: 7vh; 
+  padding-bottom: 7vh; 
+  padding-left: 8vh;
+  text-align: justify; 
+  color: white;
 }
