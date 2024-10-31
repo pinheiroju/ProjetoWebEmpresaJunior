@@ -879,8 +879,20 @@ to {
   background-color: #F9F9F9;
 }
 
+.containerTextoNH{
+  flex: 1;
+  margin-top: 10vh;
+  width: 40%;
+  margin-left: 10vh;
+  margin-bottom: 10vh;
+  color:white;
+  background-color: #161E2D;
+  border-radius: 15px;
+  margin-right: 5vh;
+}
+
 .textoNossaHistoria {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 200;
   width: 80%;
   padding-top: 7vh; 
@@ -889,5 +901,30 @@ to {
   text-align: justify; 
   color: white;
 }
+.fotosNH{
+  background-image: url(https://www.saffi.com.br/site/wp-content/uploads/2023/04/consultor-de-empresas.jpg);
+  width: 100%;
+  height: 100vh;
+  flex: 1;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  margin-left: 5vh;
+  margin-right: 10vh;
+  border-radius: 15px;
+}
+.containerGrandeNH{
+  display: flex;
+  background-color: #F9F9F9;
+  padding-bottom: 30vh;
+}
+.containerFinal_QS{
+  background-color: #161E2D;
+  height: 60vh;
+  width: 100%;
+  display: flex; /* Ativa o Flexbox */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+  flex-direction: column; /* Alinha os itens verticalmente */
 
+}
 /* fim do css referente a pagina quem somos */
