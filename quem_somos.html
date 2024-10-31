@@ -5,7 +5,6 @@
     <title>Quem Somos | MSW Capital</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/npm/bootstrap@5.1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
   <!-- header com logo no topo-->
@@ -142,22 +141,11 @@
 
     <script>
       const timeline_wrapper = document.querySelector('.timeline-wrapper');
-      const timelines = document.querySelectorAll('.timeline li .timeline-content');
-      const timeline = document.querySelector('.timeline');
-
-      timeline_wrapper.addEventListener('mouseenter', () => {
-        timeline.style.animationPlayState = 'paused';
-      });
-
-      timeline_wrapper.addEventListener('mouseleave', () => {
-        timeline.style.animationPlayState = 'running';
-      });
-
-      for (const time of timelines) {
-        time.addEventListener('mouseenter', () => time.classList.add('show'));
-        time.addEventListener('mouseleave', () => time.classList.remove('show'));
-      }
+        timelines = document.querySelectorAll('.timeline li .timeline-content');
       
+        for(const time of timelines){
+        time.onclick= ()=> time.classList.toggle('show');
+      }
       /* criar interacao com a timeline */
       timeline_wrapper.addEventListener('mousemove', (event)=>{
         const timeline = document.querySelector('.timeline');
