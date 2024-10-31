@@ -92,7 +92,6 @@
             <h3>2000</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
             Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-            <span class="close">Clique para fechar</span>
           </div>
       </li>
       <li timeline-content-date="2008">
@@ -102,7 +101,6 @@
             <h3>2008</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
             Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-            <span class="close">Clique para fechar</span>
           </div>
       </li>
       <li timeline-content-date="2012">
@@ -112,7 +110,6 @@
             <h3>2012</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
             Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-            <span class="close">Clique para fechar</span>
           </div>
       </li>
       <li timeline-content-date="2015">
@@ -122,7 +119,6 @@
               <h3>2015</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
               Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-              <span class="close">Clique para fechar</span>
             </div>
       </li>
       <li timeline-content-date="2020">
@@ -132,7 +128,6 @@
               <h3>2020</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
               Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-              <span class="close">Clique para fechar</span>
             </div>
       </li>
       <li timeline-content-date="2024">
@@ -142,18 +137,28 @@
               <h3>2024</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
               Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-              <span class="close">Clique para fechar</span>
             </div>
       </li>
     </ul>
 
     <script>
       const timeline_wrapper = document.querySelector('.timeline-wrapper');
-        timelines = document.querySelectorAll('.timeline li .timeline-content');
-      
-        for(const time of timelines){
-        time.onclick= ()=> time.classList.toggle('show');
+      const timelines = document.querySelectorAll('.timeline li .timeline-content');
+      const timeline = document.querySelector('.timeline');
+
+      timeline_wrapper.addEventListener('mouseenter', () => {
+        timeline.style.animationPlayState = 'paused';
+      });
+
+      timeline_wrapper.addEventListener('mouseleave', () => {
+        timeline.style.animationPlayState = 'running';
+      });
+
+      for (const time of timelines) {
+        time.addEventListener('mouseenter', () => time.classList.add('show'));
+        time.addEventListener('mouseleave', () => time.classList.remove('show'));
       }
+      
       /* criar interacao com a timeline */
       timeline_wrapper.addEventListener('mousemove', (event)=>{
         const timeline = document.querySelector('.timeline');
@@ -164,7 +169,6 @@
     </script>
 
   </div>
-
   <!-- fim da timeline-->
 
   <div class="containerGrandeNH">
@@ -179,8 +183,8 @@
     <div class="fotosNH"></div>
   </div>
   
-  <!-- footer -->
-  <footer class="containerFinal">
+
+  <footer class="containerFinal_QS">
     <img src="https://cdn.prod.website-files.com/5ef214b512d072975632f939/5eff6053c083b70e069d1bc8_msw-capital-white-04.svg" alt="MSW Capital" class="logoFinal">
     <div class="bandeiras2">
       <img src="https://cdn.prod.website-files.com/5beb3f66a8138a371a34de3b/5c52ee3bd785c9006fdc44fc_brazil.svg" alt="Bandeira do Brasil" class="bandeiraBR">
@@ -203,6 +207,7 @@
     </div>
   
 </footer>
+  
 
 
 </body>
