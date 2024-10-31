@@ -571,27 +571,26 @@ to {
 
 .quemSomos{
   color: white;
-  font-weight: 300;
-  font-size: 20px;
   text-align: left;
-  padding-top: 150px;
-  padding-bottom: 50px;
-  background-color: #161E2D;
+  padding-top: 160px;
+  padding-bottom: 75px;
+  background-image: url(https://raw.githubusercontent.com/danielscipriani/trainee_t11_ej2024/refs/heads/main/Captura%20de%20tela%202024-10-31%20172614.png);
   background-size: cover;
+  background-position: center 30px;
   height: auto;
   width: 100%;
 }
 
 .tituloQuemSomos{
   font-weight: 300;
-  font-size:40px;
+  font-size:35px;
   padding-left: 50px;
 }
 
 .textoQuemSomos{
   width: 50%;
   text-align: justify;
-  font-weight: 300;
+  font-weight: 250;
   font-size:25px;
   padding-left: 50px;
 }
@@ -901,10 +900,12 @@ to {
   text-align: justify; 
   color: white;
 }
+
+
 .fotosNH{
   background-image: url(https://www.saffi.com.br/site/wp-content/uploads/2023/04/consultor-de-empresas.jpg);
   width: 100%;
-  height: 100vh;
+  height: 139vh;
   flex: 1;
   margin-top: 10vh;
   margin-bottom: 10vh;
@@ -915,9 +916,11 @@ to {
 .containerGrandeNH{
   display: flex;
   background-color: #F9F9F9;
-  padding-bottom: 30vh;
+  padding-bottom: 20vh;
 }
-.containerFinal_QS{
+
+
+.containerFinal2{
   background-color: #161E2D;
   height: 60vh;
   width: 100%;
@@ -926,5 +929,6 @@ to {
   align-items: center; /* Centraliza os itens verticalmente */
   flex-direction: column; /* Alinha os itens verticalmente */
 
+  
 }
 /* fim do css referente a pagina quem somos */
