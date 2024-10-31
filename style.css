@@ -669,7 +669,6 @@ to {
 }
 
 .timeline li{
-.timeline li{
   position: relative;
   width: 22rem;
   width: calc(100%/6);
@@ -748,6 +747,7 @@ to {
   border-radius: 50%;
   top:-3.4rem;
   color: white;
+}
 /*linhazinha muda de cor quando passa mouse*/
 .timeline li:hover::before{
   background-color: white; 
@@ -773,6 +773,7 @@ to {
 
 .timeline li:nth-child(odd)::after{
   top: 3rem;
+}
   
 .timeline li:nth-child(odd)::after{
   top: 3rem;
@@ -781,6 +782,7 @@ to {
 
 .timeline li:nth-child(even)::after{
   top: -3rem;
+}
 .timeline li:nth-child(even)::after{
   top: -3rem;
 }
@@ -798,6 +800,8 @@ to {
   flex-direction: column;
   justify-content: space-around;
   transition: .3s ease;
+
+}
 .timeline-content{
   width: 1.3rem;
   height: 1.3rem;
@@ -820,6 +824,8 @@ to {
   --scale: 1.2;
   cursor: pointer;
   z-index: 200;
+
+}
 .timeline-content-date{
   margin-left: -1.5rem;
 }
@@ -870,6 +876,8 @@ to {
 
 .timeline-content h3{
   color: black;
+
+}
 /* marco */ 
 .timeline-title-odd, .timeline-title-even{ 
   font: 600 1.1rem;
@@ -918,7 +926,7 @@ to {
   padding: 1rem;
   border-radius: 1rem;
   margin-left: 0.7rem;
-
+}
 
 .timeline-content p{
   background-color: white;
@@ -939,6 +947,7 @@ to {
   padding: .5rem .8rem;
   font-size: 1rem;
   border-radius: 2rem;
+}
 .timeline-content.show p{
   margin-left: 0.7rem;
 }
@@ -1126,3 +1135,5 @@ to {
   text-align: justify; 
   color: white;
 }
+
+/* fim do css referente a pagina quem somos */
