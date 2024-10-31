@@ -477,4 +477,69 @@
     color: white;
   }
   
+
+
+  .containerValores{
+    min-height: 100vh;
+    background-color: #F9F9F9;
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: 
+          minmax(1rem, 1fr)
+          minmax(0, 55rem)
+          minmax(1rem, 1fr);
+  
+  
+  }
+  
+  .containerValores > * {
+    grid-column: 2 / 3;
+  }      
+        
+  .tabs {
+    background-color: #F9F9F9;
+    display: grid;
+    align-content: center;
+    margin-block: 4em;
+  }
+  
+  .panel-grid {
+    padding: 0 2rem 2rem;
+    display: grid;
+    gap: 2rem;
+  }
+  
+  
+  ul[role = "tablist"]{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  
+  li[role="presentation"]{
+    border : solid 2px #161E2D;
+    border-bottom: none;
+  }
+  
+  li[role="presentation"]:has(a[aria-selected="true"]){
+    background-color: #161E2D;
+    color : white;
+  }
+  
+  a[role = "tab"]{
+    padding: 1rem 2rem;
+    display: block;
+  }
+  
+    [role = "tabpanel"]{
+    border : solid 2px #161E2D;
+    color: #161E2D;
+  }
+  
+  
+
+
+
   /* fim do css referente a pagina quem somos */
