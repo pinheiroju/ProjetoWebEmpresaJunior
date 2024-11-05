@@ -954,8 +954,19 @@
   .containerTextoPCE{
     width: 40%;
     text-align: center;
+    background-color: #F9F9F9;
   }
 
   .textoPCE{
     padding-left: 15vh;
+  }
+
+  /* fim temporario do css referente a pagina filosofia */
+
+  /* comeco do css referente a pagina Portfolio */
+
+  .portfolio{
+    margin-top: 15vh;
+    font-size: 35px;
+    padding-left: 50px;
   }
