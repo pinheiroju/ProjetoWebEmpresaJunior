@@ -570,19 +570,19 @@
   /* css referente a pagina quem somos */ 
   
   .quemSomos{
-    color: white;
+    color: black;
     text-align: left;
     padding-top: 160px;
     padding-bottom: 75px;
-    background-image: url(https://raw.githubusercontent.com/danielscipriani/trainee_t11_ej2024/refs/heads/main/Captura%20de%20tela%202024-10-31%20172614.png);
+    background-image: linear-gradient(#101826, #f9f9f9);
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: -400px 30px;
     height: auto;
     width: 100%;
   }
   
   .tituloQuemSomos{
-    font-weight: 300;
+    font-weight: 350;
     font-size:35px;
     padding-left: 50px;
   }
@@ -590,7 +590,7 @@
   .textoQuemSomos{
     width: 50%;
     text-align: justify;
-    font-weight: 250;
+    font-weight: 200;
     font-size:25px;
     padding-left: 50px;
   }
@@ -612,8 +612,20 @@
     align-items: center;
     position: relative;
     overflow-x: auto;
+
   }
   
+  .timeline-h1{
+    font-size: 40px;
+    color: white;
+    text-align: left;
+    z-index: 100;
+    position: absolute;
+    top: 10px;
+    font-weight: 200;
+  }
+
+
   .timeline-wrapper::-webkit-scrollbar{
     display: none;
   }
@@ -1044,5 +1056,130 @@
   .containers li:hover .color {
     opacity: 1;
     transform: scale(1.05);
+  }
+
+
+  .timeline-portfolio {
+    margin-top: 35px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 40% auto;
+    justify-content: center;
+  }
+  
+  ul {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-top: 30px;
+    position: relative;
+    padding: 25px;
+  }
+  
+  li p {
+    padding: 0 20px;
+    transition: 1.5s;
+  }
+  
+  .date {
+    position: absolute;
+    top: 30px;
+    left: -50px;
+    opacity: 0;
+    transition: 1.5s;
+    font-size: 12px;
+  }
+  
+  .timeline-portfolio-line {
+    background: rgb(228, 228, 228);
+    width: 4px;
+    border-radius: 12px;
+    position: relative;
+    justify-self: end;
+  }
+  
+  .timeline-portfolio-point {
+    border: none;
+    position: absolute;
+    border-radius: 50%;
+    background: rgb(228, 228, 228);
+    width: 8px;
+    height: 8px;
+    top: 30px;
+    left: -6px;
+    transition: 1.5s ease;
+  }
+  
+  .timeline-portfolio-innerline {
+    position: absolute;
+    background: blue;
+    width: 4px;
+    height: 0%;
+    top: 0%;
+    left: 0%;
+    transition: 1s linear;
+  }
+  
+  @media screen and (min-width: 728px) {
+    .timeline-portfolio {
+      display: block;
+    }
+  
+    ul {
+      flex-direction: row;
+    }
+  
+    li {
+      margin-top: 0;
+      position: relative;
+      width: 100%;
+      padding: 0;
+    }
+  
+    li p {
+      transform: translateY(-10px);
+      opacity: 0;
+      transition: 1.5s;
+    }
+  
+    .date {
+      opacity: 0;
+      transition: 1.5s;
+      font-size: 12px;
+      position: absolute;
+      top: -60px;
+      left: 38%;
+    }
+  
+    .timeline-portfolio-point {
+      width: 15px;
+      height: 15px;
+      top: -40px;
+      left: 40%;
+      transition: 1.5s ease;
+    }
+  
+    .timeline-portfolio-line {
+      width: 100%;
+      height: 4px;
+    }
+  
+    .timeline-portfolio-innerline {
+      position: absolute;
+      background: blue;
+      width: 0%;
+      height: 4px;
+      top: 0%;
+      left: 0%;
+      transition: 1s linear;
+      border-radius: 999px;
+    }
   }
   
