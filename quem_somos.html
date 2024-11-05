@@ -158,14 +158,14 @@
         time.addEventListener('mouseenter', () => time.classList.add('show'));
         time.addEventListener('mouseleave', () => time.classList.remove('show'));
       }
-      
+
       /* criar interacao com a timeline */
       timeline_wrapper.addEventListener('mousemove', (event)=>{
         const timeline = document.querySelector('.timeline');
         let scroll_width = 1 - (event.pageX / timeline_wrapper.clientWidth) * (timeline.clientWidth - timeline_wrapper.clientWidth);
         timeline.style.left = scroll_width.toFixed(1) + 'px';
       })
-      
+
     </script>
 
   </div>
