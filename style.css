@@ -100,7 +100,7 @@
   /* css referente a pagina home */
   
   .corpo1{
-    background-image: url(https://s3-alpha-sig.figma.com/img/3661/8159/3b996f6236b1fc4b4d28e4b627cee217?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KYuv4I8YCZxcB2bOC~NM0RRiIMgaJfXlK-obbCpxXK1oeSS4snQ9puWrmQtYcSaZdRht8QQRm5H~vjl3ohbSyHqtGe6KSMyllTjkbVI4dc0eiYay8TReNiavYonaAa6uf1J54zUh4qDJsEWMg4nON5NKdTbK-0C6su74GHw30908t~IwXxr2Ih4IAD108Sk3xBdEj8Bpa0fqQGswEz9Vpq84u6dSmhCIHM18o7VrxlmC~gitAECLKDgnO0M2Yrlu1PK95mOvL93G-d~2cEbRGoKRvP90yXD2DiZBTZmNHMtDAhwvG4FthIAWVyVSzPkuOql-bt8t1Qv61IEaaSDi9A__);
+    background-image: linear-gradient(#F9F9F9, #101826);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -111,17 +111,17 @@
     box-sizing: border-box;
   }
   
+  .tituloPrincipal{
+    color: black;
+    font-size: 50px;
+    padding-top: 20vh;
+    font-weight: 500;
+  }
   .tituloCorpo1{
     font-weight: 400;
   
   }
   
-  .tituloPrincipal{
-    color: black;
-    font-size: 50px;
-    padding-top: 25vh;
-    font-weight: 400;
-  }
   
   .subTitulo{
   
@@ -215,7 +215,7 @@
   }
   
   .corpo2{
-    background-image: url(https://s3-alpha-sig.figma.com/img/34f9/4bc7/4f597b2d8d448e6ee312662b0ad3b687?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eh7VQlBU6ixJclsJ43XX2CnYA85943kUQZqQgyKb-xS2QY0AuLr6kSNCdSRUGjNKv1qJvL3k6S-Nv~hTx4O-qAF5zI6Y0E6X3PQIQqQCsqjgmlMnW3Yuc1IrPZp1LWrm67Zukp~aOmOcKM3Qb12lkEmC2D1g-IxPJXJMwcgjeFSVYHo1eOfRfvSgiyIjzV2EVTaQb68XFYJf1KyVXhc5P14nlQKq4JUNwmieyo8FQc9PPP-EwK87Hlz38lQirCxqBZVFvfrSOhbww0c2uG~3hji4QrQAxULBGcQxudAPj~uRg0b9Dr3MTf~2VB0od-fdpVM7EtCF5rRZi-8dykPIxg__);
+    background-image: url(https://github.com/pinheiroju/ProjetoWebEmpresaJunior/blob/main/imagemPredios.jpeg?raw=true);
     background-position: center;
     background-size: 100%;
     width: 100%;
@@ -277,11 +277,6 @@
   }
   
   /* css referente a barra movel de logos */
-  .item{
-    width: 200px;
-    height: 100px;
-    border-radius: 6px;
-  }
   
   .logos::before,
   .logos::after {
@@ -312,86 +307,92 @@
   }
   
   .item {
-    width: 400px;
+    width: 200px;
     height: 100px;
-    border-radius: 6px;
     position: absolute;
-    left: max(calc(200px * 9), 100%);
+    left: max(calc(180px * 9), 100%);
     animation-name: scrollLeft;
     animation-duration: 30s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  .item1 {
-    background-image: url(https://cdn.prod.website-files.com/5ef214b512d072975632f939/5f03cba335c0c53306fcce85_logos-home-02.svg);
+  .item1 { /* baterias moura*/
+    background-image: url(https://marcasmais.com.br/wp-content/uploads/2021/03/moura_baterias_logo-3.png);
     background-repeat: no-repeat;
     background-size: contain;
     position: center;
     animation-delay: calc(30s / 9 * (9 - 1) * -1);
   }
-  
-  .item2 {
+
+  .item2 { /* monsanto */
     background-image: url(https://cdn.prod.website-files.com/5ef214b512d072975632f939/5f03cbe20de09e21d01b9535_logos-home-08.svg);
     background-repeat: no-repeat;
     position: center;
     background-size: contain;
     animation-delay: calc(30s / 9 * (9 - 2) * -1);
   }
-  
-  .item3 {
+
+
+  .item3 { /* banco vinci*/ 
     background-image: url(https://cdn.prod.website-files.com/5ef214b512d072975632f939/5f1e20d3e9c7ec2e8e57ff28_bv-03.svg);
     background-repeat: no-repeat;
     position: center;
     background-size: contain;
     animation-delay: calc(30s / 9 * (9 - 3) * -1);
   }
-  
-  .item4 {
-    background-image: url(https://cdn.prod.website-files.com/5ef214b512d072975632f939/5f03cbd9eb44ef2e6d6049c2_logos-home-07.svg);
+
+  .item4 { /* banco do brasil */ 
+    background-image: url(https://i.pinimg.com/564x/22/0a/16/220a16c05fbd5c2439d9fdc967749436.jpg);
     background-repeat: no-repeat;
     position: center;
     background-size: contain;
+    top:-10px !important;
+    margin-left: 30px !important;
     animation-delay: calc(30s / 9 * (9 - 4) * -1);
   }
-  
-  .item5 {
-    background-image: url(https://cdn.prod.website-files.com/5ef214b512d072975632f939/5f03cbba06e20b8e8a4512d0_logos-home-04.svg);
+
+  .item5 { /* microsoft */ 
+    background-image: url(https://blogs.microsoft.com/wp-content/uploads/prod/2012/08/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg);
     background-repeat: no-repeat;
     position: center;
     background-size: contain;
     animation-delay: calc(30s / 9 * (9 - 5) * -1);
   }
-  
-  .item6 {
+
+  .item6 {/*age rio*/
     background-image: url(https://cdn.prod.website-files.com/5ef214b512d072975632f939/5f03cbce52d45c6326e8bd3f_logos-home-06.svg);
     background-repeat: no-repeat;
     position: center;
     background-size: contain;
     animation-delay: calc(30s / 9 * (9 - 6) * -1);
   }
-  
-  .item7 {
+
+  .item7 { /* bb seguros*/
     background-image: url(https://cdn.prod.website-files.com/5ef214b512d072975632f939/5f03cbc32b09ff8d78e3a062_logos-home-05.svg);
     background-repeat: no-repeat;
     position: center;
     background-size: contain;
     animation-delay: calc(30s / 9 * (9 - 7) * -1);
   }
-  
-  .item8 {
+
+  .item8 { /* qualcomm */
     background-image: url(https://cdn.prod.website-files.com/5ef214b512d072975632f939/5f03cc70c9064749ccb666d8_logos-home_Prancheta%201.svg);
     background-repeat: no-repeat;
     position: center;
     background-size: contain;
     animation-delay: calc(30s / 9 * (9 - 8) * -1);
   }
-  
-  .item9 {
-    background-image: url(https://www.imagensempng.com.br/wp-content/uploads/2023/07/637.png);
+
+  .item9 { /* embraer */
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Embraer_logo.svg/1024px-Embraer_logo.svg.png);
     background-repeat: no-repeat;
     position: center;
     background-size: contain;
+    top: 20px; /* ajustar na mesma altura dos outros */
     animation-delay: calc(30s / 9 * (9 - 9) * -1);
   }
   /* fim do css referente a barra movel de logos */
@@ -427,7 +428,7 @@
   .containerConvite{
     width: 100%;
     height: 100vh;
-    background-image: url(https://s3-alpha-sig.figma.com/img/91e5/0986/3678e935f7408abef20e911ea4733847?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D-t6lyPhJY2T0JlfYtzfIohbXLFRvJHk6p4Xoc~xeLnl8JkBV2n-VwAqU7RcIOHZEH0v8eBt-pQwoYXEllgDgWUPQHJgmTx5sT1Kmc4W~tCxfevT5PHvcn2OKdDCDpBkMSxmU0aAwEK2SGmbGxkoB341XlFLDMMJVggzoiZ4q9COmh7uiKqgJ2muI3VX51qauPLNVmGSWYu2HwSfvImk7G8p90MQj4AJRJgGnhe--ulWo8Y25v~OnP7kt8t6XKtZyd-cNEIwdBPQbHNRhD6~7Ibw4rQAZ8taaLa2N~0b9ku3t60wM~FrvwpT0yUhJblDXVpHMHj197gywCmVPAVoew__);
+    background-image: url(https://github.com/pinheiroju/ProjetoWebEmpresaJunior/blob/main/imagemApertoDeMao.jpeg?raw=true);
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
@@ -603,7 +604,7 @@
     box-sizing: border-box;
     max-width: 100%;
     height: 80vh;
-    background-image: url(https://assets-global.website-files.com/5ef214b512d072975632f939/5f1e279c1bda1cee24096d68_foto-slide-2.jpg);
+    background-image: url(https://github.com/pinheiroju/ProjetoWebEmpresaJunior/blob/main/imagemReuniao.png?raw=true);
     background-color: rgba(16, 24, 38,0.7);
     mix-blend-mode: multiply;
     background-blend-mode:multiply;
@@ -708,7 +709,7 @@
   .timeline-content{
     width: 1.3rem;
     height: 1.3rem;
-    color: white;
+    color: black;
     background-color: white;
     border-radius: 50%;
     overflow: hidden;
@@ -752,8 +753,8 @@
   
   
   .timeline-content.show{
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
     border-radius: 1rem;
     padding: 1rem;
     background-color: white;
@@ -774,10 +775,9 @@
   
   
   .timeline-content p{
-    background-color: white;
+    
     color: black;
     padding: 1rem;
-    border-radius: 1rem;
     margin-left: 0.7rem;
   
   }
@@ -785,24 +785,7 @@
   .timeline-content.show p{
     margin-left: 0.7rem;
   }
-  
-  .timeline-content-close{
-    background-color: #242f42;
-    align-self: flex;
-    padding: .5rem .8rem;
-    font-size: 1rem;
-    border-radius: 2rem;
-  }
-  
-  .close{
-    background-color: #242f42;
-    color: white;
-    align-self: center;
-    padding: 0.5rem;
-    border-radius: 2rem;
-    font-size: 1rem;
-  }
-  
+
   /* fim do css referente a timeline */
   
   .containerBrancoQuemSomos{
@@ -1059,127 +1042,89 @@
   }
 
 
-  .timeline-portfolio {
-    margin-top: 35px;
-    padding: 15px;
-    display: grid;
-    grid-template-columns: 40% auto;
-    justify-content: center;
-  }
-  
-  ul {
-    margin-top: 30px;
+  /* timeline do portfolio */
+  .timeline-portfolio-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    margin-top: 30px;
-    position: relative;
-    padding: 25px;
-  }
-  
-  li p {
-    padding: 0 20px;
-    transition: 1.5s;
-  }
-  
-  .date {
-    position: absolute;
-    top: 30px;
-    left: -50px;
-    opacity: 0;
-    transition: 1.5s;
-    font-size: 12px;
+    padding-top: 20px;
+    background-color: #F9F9F9;
   }
   
   .timeline-portfolio-line {
-    background: rgb(228, 228, 228);
-    width: 4px;
-    border-radius: 12px;
+    width: 80%; /* ajusta a largura da linha */
+    height: 4px;
+    background-color: #ccc;
     position: relative;
-    justify-self: end;
-  }
-  
-  .timeline-portfolio-point {
-    border: none;
-    position: absolute;
-    border-radius: 50%;
-    background: rgb(228, 228, 228);
-    width: 8px;
-    height: 8px;
-    top: 30px;
-    left: -6px;
-    transition: 1.5s ease;
+    margin: 20px 0;
+    overflow: hidden;
   }
   
   .timeline-portfolio-innerline {
+    width: 0;
+    height: 100%;
+    background-color: #333;
     position: absolute;
-    background: blue;
-    width: 4px;
-    height: 0%;
-    top: 0%;
-    left: 0%;
-    transition: 1s linear;
+    transition: width 3s ease;
   }
   
-  @media screen and (min-width: 728px) {
-    .timeline-portfolio {
-      display: block;
-    }
-  
-    ul {
-      flex-direction: row;
-    }
-  
-    li {
-      margin-top: 0;
-      position: relative;
-      width: 100%;
-      padding: 0;
-    }
-  
-    li p {
-      transform: translateY(-10px);
-      opacity: 0;
-      transition: 1.5s;
-    }
-  
-    .date {
-      opacity: 0;
-      transition: 1.5s;
-      font-size: 12px;
-      position: absolute;
-      top: -60px;
-      left: 38%;
-    }
-  
-    .timeline-portfolio-point {
-      width: 15px;
-      height: 15px;
-      top: -40px;
-      left: 40%;
-      transition: 1.5s ease;
-    }
-  
-    .timeline-portfolio-line {
-      width: 100%;
-      height: 4px;
-    }
-  
-    .timeline-portfolio-innerline {
-      position: absolute;
-      background: blue;
-      width: 0%;
-      height: 4px;
-      top: 0%;
-      left: 0%;
-      transition: 1s linear;
-      border-radius: 999px;
-    }
+  .timeline-portfolio {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 0;
+    list-style: none;
+    margin-top: 20px;
   }
+  
+  .timeline-portfolio li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .timeline-portfolio-point {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #242f42;
+    color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    top: -60px;
+    margin-bottom: 1px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+  }
+  
+  .timeline-portfolio p {
+    margin: 0;
+    font-size: 20px;
+    color: #242f42;
+    position: relative;
+    top:-30px;
+    transition: opacity 0.5s ease;
+    
+  }
+  
+ 
+  /*
+  .timeline-portfolio .timeline-portfolio-line {
+    background: linear-gradient(to right, #242f42, #F9F9F9); 
+  }  
+
+  .timeline-portfolio .timeline-portfolio-innerline {
+    position: absolute;
+    background: linear-gradient(to right, #242f42,#F9F9F9); 
+  }  
+  */
+
+
+
   

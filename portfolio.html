@@ -8,10 +8,10 @@
 </head>
 
 <body>
-     <!-- header com logo no topo-->
+  <!-- header com logo no topo-->
   <section id="header">
     <div class="containerLogo">
-      <img src="https://s3-alpha-sig.figma.com/img/0abf/3558/688dda7a36c75096789dc23377ded772?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nlskgTSrPOhnfgUu6xWQazRrX5zNrxUHb16bGibVRzR2OURo3L~2FPWoqHy5R4oI5Kp6nbeeK1--2WWef0qUPgsTbObLuzByq2xaqR7jkMXM~aBDrCvK6Opi60oUc~dPkV4DqNDzHsOXkMue4hQTnNmWMQMkRfnNPtDHrg~Yx-CEdHo7w4m5s2sdp7CrzPQMWKofO3fPZdz-pSe1N556jEOoMKrn69CYDgU0aCRzgWNQrbgO4ISJRB2TMvEuMhd8YN0RNdXJNkHUNeC4qVBJEjQQXIYqc-IIu71ENVhTB4DBKMVC6qHu1XDd5ZvakPb7cgZ4YrklXKxTWkhTfLKMOA__" alt="MSW logo" class="logo">
+      <img src="https://github.com/pinheiroju/ProjetoWebEmpresaJunior/blob/main/logoAzul.png?raw=true" alt="MSW logo" class="logo">
     </div>
     <button class="botaoContrate">Contrate agora</button>
     <div class="bandeiras">
@@ -29,7 +29,7 @@
         <li><a href="equipe.html">Equipe</a></li>
         <li><a href="fundos.html">Fundos</a></li>
         <li><a href="noticias.html">Corporate Venture</a></li>
-        <li><a href="servicos.html">Portfólio</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
         <li><a href="contato.html">Contato</a></li>
         </ul>
       </nav>
@@ -55,158 +55,58 @@
       </script>
     </div> 
   </section>
+ 
 
-
-    <div class="portfolio">Portfolio</div>
-    <div class="corFundoLinha">
-        <div class="linhaSeparadoraPortfolio"></div>
-    </div>
-    <h1>Timeline Portfolio</h1>
-
-    <section class="timeline-portfolio">
+  <div class="portfolio">Portfolio</div>
+  <div class="corFundoLinha">
+    <div class="linhaSeparadoraPortfolio"></div>
+  </div>
+    
+  <!--timeline -->
+  <section class="timeline-portfolio-wrapper">
       <div class="timeline-portfolio-line">
         <span class="timeline-portfolio-innerline"></span>
       </div>
 
-      <ul>
+      <ul class="timeline-portfolio">
         <li>
-          <span class="timeline-portfolio-point"></span>
-          <span class="date">2000</span>
-          <p>Lorem, ipsum dolor sit amet</p>
+          <span class="timeline-portfolio-point">21</span>
+          <p>Empresas investidas</p>
         </li>
         <li>
-          <span class="timeline-portfolio-point"></span>
-          <span class="date">2005</span>
-          <p>Lorem, ipsum dolor sit amet</p>
+          <span class="timeline-portfolio-point">4</span>
+          <p>Fundos</p>
         </li>
         <li>
-          <span class="timeline-portfolio-point"></span>
-          <span class="date">2010</span>
-          <p>Lorem, ipsum dolor sit amet</p>
+          <span class="timeline-portfolio-point">10</span>
+          <p>Portfolio Ativo</p>
         </li>
-        <li>
-          <span class="timeline-portfolio-point"></span>
-          <span class="date">2015</span>
-          <p>Lorem, ipsum dolor sit amet</p>
-        </li>
-        <li>
-          <span class="timeline-portfolio-point"></span>
-          <span class="date">2020</span>
-          <p>Lorem, ipsum dolor sit amet</p>
-        </li>
+        
       </ul>
 
       <script>
-        const line = document.querySelector(".timeline-portfolio-innerline");
-
-        let i = 0;
-        let i2 = 1;
-        let target1 = document.querySelector(".timeline-portfolio ul");
-        let target2 = document.querySelectorAll(".timeline-portfolio ul li");
-
-        const timeline_events = document.querySelectorAll(".timeline-portfolio ul li");
-
-        function showTime(e) {
-          e.setAttribute("done", "true");
-          e.querySelector(".timeline-portfolio-point").style.background = "blue";
-          e.querySelector(".date").style.opacity = "100%";
-          e.querySelector("p").style.opacity = "100%";
-          e.querySelector("p").style.transform = "translateY(0px)";
-        }
-
-        function hideTime(e) {
-          e.removeAttribute("done");
-          e.querySelector(".timeline-portfolio-point").style.background = "rgb(228, 228, 228)";
-          e.querySelector(".date").style.opacity = "0%";
-          e.querySelector("p").style.opacity = "0%";
-          e.querySelector("p").style.transform = "translateY(-10px)";
-        }
-
-        function slowLoop() {
-          setTimeout(function () {
-            showTime(timeline_events[i]);
-            timelineProgress(i + 1);
-            i++;
-            if (i < timeline_events.length) {
-              slowLoop();
-            }
-          }, 800);
-        }
-
-        function timelineProgress(value) {
-          let progress = `${(value / timeline_events.length) * 100}%`;
-          if (window.matchMedia("(min-width: 728px)").matches) {
-            line.style.width = progress;
-            line.style.height = "4px";
-          } else {
-            line.style.height = progress;
-            line.style.width = "4px";
-          }
-        }
-
-        let observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.intersectionRatio > 0.9) {
-                if (window.matchMedia("(min-width: 728px)").matches) {
-                  slowLoop();
-                } else {
-                  showTime(entry.target);
-                  timelineProgress(i2);
-                  i2++;
-                }
-                observer.unobserve(entry.target);
-              }
-            });
-          },
-          { threshold: 1, rootMargin: "0px 0px -50px 0px" }
-        );
-
-        if (window.matchMedia("(min-width: 728px)").matches) {
-          observer.observe(target1);
-        } else {
-          target2.forEach((t) => {
-            observer.observe(t);
-          });
-        }
-
-        timeline_events.forEach((li, index) => {
-          li.addEventListener("click", () => {
-            if (li.getAttribute("done")) {
-              timelineProgress(index);
-
-              // hide all timeline events from last up to the point clicked
-              timeline_events.forEach((ev, idx) => {
-                if (idx >= index) {
-                  hideTime(ev);
-                }
-              });
-            } else {
-              timelineProgress(index + 1);
-              // show all timeline events from first up to the point clicked
-              timeline_events.forEach((ev, idx) => {
-                if (idx <= index) {
-                  showTime(ev);
-                }
-              });
-            }
+        document.addEventListener("DOMContentLoaded", function() {
+          // Define a linha animada para preencher
+          const innerLine = document.querySelector(".timeline-portfolio-innerline");
+          const points = document.querySelectorAll(".timeline-portfolio-point");
+          const paragraphs = document.querySelectorAll(".timeline-portfolio li p");
+        
+          // Inicia a animação da linha (preenchendo-a totalmente)
+          innerLine.style.width = "100%";
+        
+          // Define o tempo de atraso entre cada bolinha e seu parágrafo
+          points.forEach((point, index) => {
+            setTimeout(() => {
+              point.style.backgroundColor = "#333"; // Cor "acesa" da bolinha
+              point.style.color = "#fff";           // Texto dentro da bolinha visível
+              paragraphs[index].style.opacity = 1;  // Parágrafo visível
+            }, 500 * (index + 1)); // Atraso para cada bolinha e parágrafo
           });
         });
-
-        var doit;
-        window.addEventListener("resize", () => {
-          clearTimeout(doit);
-          doit = setTimeout(resizeEnd, 1200);
-        });
-
-        function resizeEnd() {
-          i = 0;
-          slowLoop();
-        }
-
-
+        
       </script>
-    </section>
+
+  </section>
 
 
 
