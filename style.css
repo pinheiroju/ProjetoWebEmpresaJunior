@@ -101,7 +101,6 @@
   
   .corpo1{
     background-image: linear-gradient(#F9F9F9, #101826);
-    margin-top: 90px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -115,7 +114,7 @@
   .tituloPrincipal{
     color: black;
     font-size: 50px;
-    padding-top: 12vh;
+    padding-top: 20vh;
     font-weight: 500;
   }
   .tituloCorpo1{
@@ -576,7 +575,7 @@
     text-align: left;
     padding-top: 160px;
     padding-bottom: 75px;
-    background-image: linear-gradient(#242f42, #f9f9f9);
+    background-image: linear-gradient(#101826, #f9f9f9);
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
@@ -584,7 +583,7 @@
   }
   
   .tituloQuemSomos{
-    font-weight: 450;
+    font-weight: 350;
     font-size:35px;
     padding-left: 50px;
   }
@@ -592,7 +591,7 @@
   .textoQuemSomos{
     width: 50%;
     text-align: justify;
-    font-weight: 400;
+    font-weight: 200;
     font-size:25px;
     padding-left: 50px;
   }
@@ -965,7 +964,6 @@
     font-size: 50px;
     padding-left: 50px;
     background-color: #F9F9F9;
-
   }
   
 .corFundoLinha{
@@ -973,10 +971,10 @@
 }
 
   .linhaSeparadoraPortfolio{
-    width:15%;
+    width:12%;
     height: 3px;
     background-color: red;
-    margin-left: 52px;
+    margin-left: 30px;
   }
   
   .containerPortfolio {
@@ -993,7 +991,7 @@
     gap: 15px;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 1200px; /* Reduz a largura máxima do contêiner */
+    max-width: 1200px;
     padding-top: 45px;
     margin: 0;
     list-style-type: none;
@@ -1003,7 +1001,7 @@
   .containers li {
     list-style: none;
     display: inline-block;
-    width: 230px; /* Aumenta a largura de cada item */
+    width: 230px; 
     height: 200px;
     position: relative;
     overflow: hidden;
@@ -1054,7 +1052,7 @@
   }
   
   .timeline-portfolio-line {
-    width: 80%; /* ajusta a largura da linha */
+    width: 80%; 
     height: 4px;
     background-color: #ccc;
     position: relative;
@@ -1114,18 +1112,35 @@
     transition: opacity 0.5s ease;
     
   }
-  
- 
-  /*
-  .timeline-portfolio .timeline-portfolio-line {
-    background: linear-gradient(to right, #242f42, #F9F9F9); 
-  }  
 
-  .timeline-portfolio .timeline-portfolio-innerline {
-    position: absolute;
-    background: linear-gradient(to right, #242f42,#F9F9F9); 
-  }  
-  */
+.foraDisc{
+  
+}
+
+ .Disc {
+  margin-top: 10vh;
+  margin-left: 5vh;
+  text-align: center;
+ }
+
+ .textoDisc{
+  font-size: 15px;
+ }
+
+ .imgDisc{
+  width: 30%;
+  height: 30%;
+ }
+
+  
+
+
+
+
+
+
+
+
 
 
 
