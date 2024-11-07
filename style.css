@@ -1114,24 +1114,53 @@
   }
 
 .foraDisc{
+    background-color: #161E2D;
+    height: 600px;
+    position: relative;
   
-}
+  }
+  
+   .Disc {
+    margin-left: 5vh;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    top: 200px;
+   }
+  
+   .textoDisc{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    text-align: justify;
+    margin-left: 50px;
+    margin-top: 20vh;
+    margin-right: 50px;
+    
+   }
+  
+   .imgDisc{
+    width: 30%;
+    height: 30%;
+    top: 160px;
+    margin-top: 50px;
+    display: flex;
+    left: 60px;
+    margin-left: 50px;
+   }
 
- .Disc {
-  margin-top: 10vh;
-  margin-left: 5vh;
-  text-align: center;
- }
 
- .textoDisc{
-  font-size: 15px;
- }
+   .finalDescricao{
+    background-color: #F9F9F9;
+    height: 20vh;
+    padding-top: 100px;
+   }
 
- .imgDisc{
-  width: 30%;
-  height: 30%;
- }
-
+   .linkDescricao{
+    color: #C83838;
+    font-size: 20px;
+    margin-left: 12vh;
+   }
   
 
 
